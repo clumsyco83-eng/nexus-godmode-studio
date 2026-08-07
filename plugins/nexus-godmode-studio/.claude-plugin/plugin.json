@@ -1,0 +1,11 @@
+{
+  "name": "nexus-godmode-studio",
+  "version": "1.0.0",
+  "description": "A professional multidisciplinary Claude Code skill pack for games, mobile apps, design, animation, testing, release, marketing and product strategy.",
+  "author": {
+    "name": "Jhonny"
+  },
+  "homepage": "https://github.com/clumsyco83-eng/nexus-godmode-studio",
+  "repository": "https://github.com/clumsyco83-eng/nexus-godmode-studio",
+  "license": "MIT"
+}
