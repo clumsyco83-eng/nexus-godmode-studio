@@ -1,0 +1,30 @@
+{
+  "name": "nexus-studio-marketplace",
+  "owner": {
+    "name": "YOUR_NAME"
+  },
+  "description": "NEXUS GODMODE STUDIO: nine professional Claude Code skills for end-to-end product creation and release.",
+  "version": "2.0.0",
+  "plugins": [
+    {
+      "name": "nexus-godmode-studio",
+      "source": "./plugins/nexus-godmode-studio",
+      "description": "A multidisciplinary Claude Code production studio containing nine specialist skills.",
+      "version": "2.0.0",
+      "author": {
+        "name": "YOUR_NAME"
+      },
+      "category": "development",
+      "tags": [
+        "games",
+        "mobile-apps",
+        "figma",
+        "creative",
+        "qa",
+        "release",
+        "aso",
+        "product-strategy"
+      ]
+    }
+  ]
+}
