@@ -1,0 +1,67 @@
+name: NEXUS Windows Skill Pack CI
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "plugins/nexus-godmode-studio/skills/**"
+      - ".claude/skills/**"
+      - "global/install-nexus-skills.ps1"
+      - ".github/workflows/windows-skill-pack-ci.yml"
+  push:
+    branches:
+      - upgrade/windows-skill-verification
+
+permissions:
+  contents: read
+
+jobs:
+  verify-windows-skill-pack:
+    runs-on: windows-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify canonical and project mirrors match
+        shell: pwsh
+        run: |
+          $canonical = Join-Path $PWD 'plugins\nexus-godmode-studio\skills'
+          $mirror = Join-Path $PWD '.claude\skills'
+
+          function Hash-Tree([string]$Root) {
+            $map = @{}
+            Get-ChildItem -LiteralPath $Root -Recurse -File | ForEach-Object {
+              $relative = [System.IO.Path]::GetRelativePath($Root, $_.FullName).Replace('\', '/')
+              $map[$relative] = (Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash
+            }
+            return $map
+          }
+
+          $a = Hash-Tree $canonical
+          $b = Hash-Tree $mirror
+          if ($a.Count -ne $b.Count) { throw "Skill mirrors have different file counts: $($a.Count) vs $($b.Count)" }
+          foreach ($key in $a.Keys) {
+            if (-not $b.ContainsKey($key)) { throw "Mirror missing: $key" }
+            if ($a[$key] -ne $b[$key]) { throw "Mirror differs: $key" }
+          }
+          Write-Host "PASS canonical/project skill mirrors match ($($a.Count) files)."
+
+      - name: Install all NEXUS skills into isolated Claude directory
+        shell: pwsh
+        run: |
+          $skills = Join-Path $env:RUNNER_TEMP 'claude-skills'
+          ./global/install-nexus-skills.ps1 -Scope All -SkillsDir $skills
+
+      - name: Verify priority six without modifying installation
+        shell: pwsh
+        run: |
+          $skills = Join-Path $env:RUNNER_TEMP 'claude-skills'
+          ./global/install-nexus-skills.ps1 -Scope Priority -SkillsDir $skills -VerifyOnly
+
+      - name: Verify full pack without modifying installation
+        shell: pwsh
+        run: |
+          $skills = Join-Path $env:RUNNER_TEMP 'claude-skills'
+          ./global/install-nexus-skills.ps1 -Scope All -SkillsDir $skills -VerifyOnly
