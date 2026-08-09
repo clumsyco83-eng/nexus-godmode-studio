@@ -1,7 +1,7 @@
 {
   "name": "nexus-godmode-studio",
-  "version": "2.4.0",
-  "description": "A professional multidisciplinary Claude Code skill pack: twenty-six complementary skills covering orchestration, architecture, backend and data, platform/SRE, AI systems, security, research, context efficiency, games, mobile apps, design, animation and VFX, testing, TDD, browser-based webapp testing, verification, Git safety, release, marketing, product strategy, and skill discovery.",
+  "version": "2.5.0",
+  "description": "A professional multidisciplinary Claude Code skill pack: twenty-seven complementary skills covering deep reasoning, research, decision quality, orchestration, architecture, backend and data, platform/SRE, AI systems, security, context efficiency, games, mobile apps, design, animation and VFX, testing, TDD, browser-based webapp testing, verification, Git safety, release, marketing, product strategy, and skill discovery.",
   "author": {
     "name": "Jhonny",
     "url": "https://github.com/clumsyco83-eng"
@@ -11,6 +11,9 @@
   "license": "MIT",
   "keywords": [
     "skills",
+    "reasoning",
+    "research",
+    "decision-quality",
     "orchestration",
     "architecture",
     "games",
