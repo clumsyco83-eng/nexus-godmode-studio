@@ -1,6 +1,6 @@
 # NEXUS GODMODE STUDIO — Skill Index
 
-Twenty skills, each in its own folder with its own `SKILL.md`. They ship together as one
+Twenty-six skills, each in its own folder with its own `SKILL.md`. They ship together as one
 Claude Code plugin, but they are independent and are selected individually.
 
 When the plugin is installed, invoke a skill as `/nexus-godmode-studio:<folder-name>`.
@@ -37,6 +37,29 @@ automatically and Claude selects the relevant skill without being named.
 | `project-memory-continuity/` | Durable project knowledge across sessions, compaction, handoffs, and agents. |
 | `token-optimizer-v2/` | Lower token and context cost without reducing correctness or verification. |
 
+## Vetted specialist additions
+
+These six skills were selected because they add capabilities not already cleanly owned by the twenty NEXUS skills. Third-party source and license details are recorded in `../THIRD_PARTY_SKILLS.md`.
+
+| Folder | Purpose |
+| --- | --- |
+| `find-skills/` | Discover high-quality installable skills when a new specialist capability is needed. |
+| `verification-before-completion/` | Require fresh evidence before claiming a fix, build, test run, or task is complete. |
+| `git-guardrails-claude-code/` | Configure Claude Code hooks that block dangerous Git operations before execution. |
+| `tdd/` | Test-driven development using behavior-focused red → green vertical slices. |
+| `webapp-testing/` | Playwright-based local web application testing, screenshots, browser logs, and server lifecycle support. |
+| `frontend-design/` | Distinctive, intentional implemented frontend design with strong typography, layout, motion, and self-critique. |
+
+### Deliberately not duplicated
+
+Three candidates from the external shortlist are not vendored because the pack already has stronger overlapping owners:
+
+- `systematic-debugging` → `engineering-intelligence`
+- `improve-codebase-architecture` → `principal-architecture`
+- `brainstorming` → `nexus-godmode-master` / `godmode-v2`
+
+Keeping one clear owner per capability reduces trigger conflicts and context waste.
+
 ## Editing these skills
 
 `plugins/nexus-godmode-studio/skills/` is the source of truth. `.claude/skills/` is a mirror
@@ -48,4 +71,4 @@ Each `SKILL.md` must keep:
 - YAML frontmatter starting at the very first byte, opened and closed with `---`
 - a `name` that exactly matches the folder name
 - a `description` under 1024 characters that says what the skill does *and* when to use it
-- working relative paths for anything under `references/`
+- working relative paths for bundled scripts, examples, licenses, and references

@@ -2,6 +2,11 @@ name: Sync NEXUS Project Skills
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "plugins/nexus-godmode-studio/skills/**"
 
 permissions:
   contents: write
@@ -16,6 +21,7 @@ jobs:
 
       - name: Copy NEXUS skills to project skills
         run: |
+          rm -rf .claude/skills
           mkdir -p .claude/skills
           cp -R plugins/nexus-godmode-studio/skills/. .claude/skills/
 
@@ -26,5 +32,5 @@ jobs:
 
           git add .claude/skills
 
-          git commit -m "Install NEXUS skills for Claude Code project" || exit 0
+          git commit -m "Sync NEXUS project skills" || exit 0
           git push
