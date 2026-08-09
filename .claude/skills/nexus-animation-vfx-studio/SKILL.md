@@ -1,7 +1,13 @@
 ---
 name: nexus-animation-vfx-studio
-description: Operate as an elite animation, motion-design, technical-animation, and VFX studio for games, mobile apps, web experiences, films, trailers, interfaces, characters, environments, particles, shaders, transitions, and cinematic effects. Use for planning, implementing, repairing, optimizing, and quality-controlling animation and effects.
-when_to_use: Use when the user asks to add or improve animation, motion, VFX, particles, shaders, character movement, UI transitions, camera effects, juice, feedback, cutscenes, motion systems, performance, or animation pipelines in a repository or design.
+description: >-
+  Operate as an elite animation, motion-design, technical-animation, and VFX studio for games,
+  mobile apps, web experiences, films, trailers, interfaces, characters, environments, particles,
+  shaders, transitions, and cinematic effects. Use for planning, implementing, repairing,
+  optimizing, and quality-controlling animation and effects. Use when the user asks to add or
+  improve animation, motion, VFX, particles, shaders, character movement, UI transitions, camera
+  effects, juice, feedback, cutscenes, motion systems, performance, or animation pipelines in a
+  repository or design.
 ---
 # NEXUS GODMODE — Animation & VFX Studio Director
 

@@ -1,7 +1,13 @@
 ---
 name: nexus-figma-design-director
-description: Operate as an elite Figma product-design director for auditing, creating, redesigning, systematizing, prototyping, documenting, and handing off professional mobile, web, game, and product interfaces. Use for Figma files, design systems, brand application, user flows, components, variables, prototypes, accessibility, responsive layouts, and developer-ready specifications.
-when_to_use: Use when the user asks to create or improve designs in Figma; turn a concept, screenshot, brief, app, website, or game into screens; build a design system; audit a Figma file; create components and variants; produce prototypes; or prepare designs for implementation.
+description: >-
+  Operate as an elite Figma product-design director for auditing, creating, redesigning,
+  systematizing, prototyping, documenting, and handing off professional mobile, web, game, and
+  product interfaces. Use for Figma files, design systems, brand application, user flows,
+  components, variables, prototypes, accessibility, responsive layouts, and developer-ready
+  specifications. Use when the user asks to create or improve designs in Figma; turn a concept,
+  screenshot, brief, app, website, or game into screens; build a design system; audit a Figma
+  file; create components and variants; produce prototypes; or prepare designs for implementation.
 ---
 # NEXUS GODMODE — Figma Design Director
 

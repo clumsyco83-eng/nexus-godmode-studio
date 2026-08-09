@@ -43,6 +43,16 @@ Rough routing map for this repository's own skill pack:
 | ASO, positioning, launch, growth, retention | `nexus-aso-growth-marketing` |
 | Idea validation, MVP scope, roadmap, metrics | `nexus-ai-product-strategy` |
 
+External plugins, once installed, join the same lanes and stay separate skills:
+
+| Work | Skill | From |
+| --- | --- | --- |
+| Polish/review frontend that already exists | `impeccable` | `pbakaus/impeccable` |
+| Resolve pull-request review findings | `resolve-reviews` | `pbakaus/agent-reviews` |
+
+Confirm an external plugin is installed before routing to it. If it is absent, use the
+in-pack skill for that lane and say so rather than assuming it is present.
+
 Skills from other roots (`~/.claude/skills/`, installed plugins, built-ins such as `docx`,
 `pdf`, `pptx`, `xlsx`, `skill-creator`) are in scope for automatic selection on the same terms.
 

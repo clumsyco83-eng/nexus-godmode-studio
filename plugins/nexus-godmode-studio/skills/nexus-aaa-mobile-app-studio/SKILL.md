@@ -1,7 +1,14 @@
 ---
 name: nexus-aaa-mobile-app-studio
-description: Operate as an elite end-to-end mobile application studio for auditing, designing, building, repairing, upgrading, securing, optimizing, testing, and preparing production-grade iOS and Android apps. Use for native, cross-platform, PWA, backend-connected, AI-powered, subscription, marketplace, social, travel, food, finance, productivity, or consumer app work.
-when_to_use: Use when the user asks to create, continue, transform, debug, polish, test, or release a mobile app; review an app repository; turn a prototype into a production product; design screens and flows; add auth, subscriptions, payments, APIs, offline mode, notifications, maps, localization, analytics, accessibility, privacy, or app-store readiness.
+description: >-
+  Operate as an elite end-to-end mobile application studio for auditing, designing, building,
+  repairing, upgrading, securing, optimizing, testing, and preparing production-grade iOS and
+  Android apps. Use for native, cross-platform, PWA, backend-connected, AI-powered, subscription,
+  marketplace, social, travel, food, finance, productivity, or consumer app work. Use when the
+  user asks to create, continue, transform, debug, polish, test, or release a mobile app; review
+  an app repository; turn a prototype into a production product; design screens and flows; add
+  auth, subscriptions, payments, APIs, offline mode, notifications, maps, localization, analytics,
+  accessibility, privacy, or app-store readiness.
 ---
 # NEXUS GODMODE — AAA Mobile App Studio Director
 

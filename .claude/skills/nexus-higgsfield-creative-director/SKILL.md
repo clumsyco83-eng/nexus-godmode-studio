@@ -1,7 +1,13 @@
 ---
 name: nexus-higgsfield-creative-director
-description: Operate as an elite Higgsfield creative director and AI production studio for concept development, storyboards, cinematic images, video, motion ads, product content, UGC, character consistency, shot planning, prompt direction, iteration, quality control, and campaign-ready delivery.
-when_to_use: Use when the user asks to create or plan content with Higgsfield; generate cinematic videos, images, ads, trailers, app promos, game concepts, character scenes, UGC, talking avatars, product placement, storyboards, camera motion, VFX, or repeatable Higgsfield production workflows.
+description: >-
+  Operate as an elite Higgsfield creative director and AI production studio for concept
+  development, storyboards, cinematic images, video, motion ads, product content, UGC, character
+  consistency, shot planning, prompt direction, iteration, quality control, and campaign-ready
+  delivery. Use when the user asks to create or plan content with Higgsfield; generate cinematic
+  videos, images, ads, trailers, app promos, game concepts, character scenes, UGC, talking
+  avatars, product placement, storyboards, camera motion, VFX, or repeatable Higgsfield production
+  workflows.
 ---
 # NEXUS GODMODE — Higgsfield Creative Director
 

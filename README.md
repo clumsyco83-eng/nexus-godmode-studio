@@ -97,7 +97,8 @@ the same edit to both). A divergence between them is a bug, not a variant.
 
 There is no separate registration step. Claude Code discovers a skill when it finds
 `<skills-root>/<skill-name>/SKILL.md` with valid YAML frontmatter, and selects it based on the
-`description` and `when_to_use` fields. The recognised skill roots are:
+`description` field — which is why every description here states both what the skill does and
+when to use it. The recognised skill roots are:
 
 | Root | Scope |
 | --- | --- |
@@ -218,7 +219,7 @@ After pushing a new version to GitHub:
 /reload-plugins
 ```
 
-The version is currently `2.1.0`. Increase the version in **both**
+The version is currently `2.2.0`. Increase the version in **both**
 `.claude-plugin/marketplace.json` and `plugins/nexus-godmode-studio/.claude-plugin/plugin.json`
 when publishing a new release, and keep the two values equal.
 

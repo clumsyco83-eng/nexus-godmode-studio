@@ -1,7 +1,12 @@
 ---
 name: nexus-qa-testing-director
-description: Operate as an elite quality-engineering and testing director for repositories, applications, games, APIs, websites, mobile products, AI systems, builds, releases, and regressions. Use for test strategy, bug investigation, automated testing, manual test design, performance, security, accessibility, compatibility, and release gates.
-when_to_use: Use when the user asks to test, audit, validate, debug, reproduce, review quality, create a QA plan, add test coverage, fix regressions, assess release readiness, or verify that a feature or product actually works.
+description: >-
+  Operate as an elite quality-engineering and testing director for repositories, applications,
+  games, APIs, websites, mobile products, AI systems, builds, releases, and regressions. Use for
+  test strategy, bug investigation, automated testing, manual test design, performance, security,
+  accessibility, compatibility, and release gates. Use when the user asks to test, audit,
+  validate, debug, reproduce, review quality, create a QA plan, add test coverage, fix
+  regressions, assess release readiness, or verify that a feature or product actually works.
 ---
 # NEXUS GODMODE — QA & Testing Director
 

@@ -1,5 +1,17 @@
 # Changelog
 
+## 2.2.0
+
+- Specialist Router now lists every skill by its exact slug. Ten entries previously appeared
+  only under a display name, and the slug is what actually resolves.
+- Mapped two external plugins into existing lanes without merging them: `impeccable` into
+  UI/UX (reviewing built frontend, complementing the Figma director) and `agent-reviews` into
+  Verification (pull-request review findings, complementing the QA director). Both are marked
+  external and must be confirmed installed before routing.
+- Folded `when_to_use` into `description` on the nine skills that used it. The non-standard key
+  worked on this harness but was a portability risk; the merged text is identical, so skill
+  selection is unchanged. Longest merged description is 758 characters against the 1024 limit.
+
 ## 2.1.0
 
 - Corrected metadata to reflect the twenty skills actually shipped (nine studio directors plus eleven core engineering and orchestration skills); previous metadata still described nine.

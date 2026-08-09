@@ -19,6 +19,7 @@ map is the routing layer between them.
 | Coding — AI systems | `ai-systems-engineer` | LLM/agent features, tools, RAG, evals, guardrails, cost and latency |
 | Coding — platform | `platform-sre-engineer` | CI/CD, IaC, containers, observability, SLOs, incidents, DR |
 | UI / UX | `nexus-figma-design-director` | Design systems, screens and states, prototypes, developer handoff |
+| UI / UX — implemented craft | `impeccable` *(external)* | Design-fluency review of built frontend: craft floor, anti-pattern detection, polish |
 | App development | `nexus-aaa-mobile-app-studio` | iOS/Android product work end to end |
 | Game development | `nexus-aaa-game-studio` | Gameplay, systems, content, progression, game release |
 | Animation / motion | `nexus-animation-vfx-studio` | Character and UI motion, camera, particles, shaders, game feel |
@@ -28,6 +29,7 @@ map is the routing layer between them.
 | Release | `nexus-app-store-release-director` | Builds, signing, store compliance, metadata, testing tracks, rollout |
 | Growth | `nexus-aso-growth-marketing` | Positioning, ASO, creative testing, funnels, retention |
 | Verification | `nexus-qa-testing-director` + `security-guardian` | Independent evidence before completion |
+| Verification — PR review | `resolve-reviews`, `resolve-agent-reviews`, `resolve-human-reviews` *(external, `agent-reviews`)* | Triage and resolve pull-request review findings from humans and review bots |
 | Continuity | `project-memory-continuity` | Checkpoints, decision records, durable state across sessions |
 | Efficiency | `token-optimizer-v2` | Narrow context loading, delta inspection, model/effort routing |
 
@@ -63,6 +65,18 @@ map is the routing layer between them.
 Skills installed from other repositories are routable on the same terms — put them
 in the lane they own and keep the skill budget. Route to whatever is actually
 installed; never assume a skill is present because it appears in a plan.
+
+Two external plugins are already mapped above and marked *(external)*:
+
+- `impeccable` (from `pbakaus/impeccable`) — UI/UX lane, for reviewing and polishing
+  frontend that already exists. It complements `nexus-figma-design-director` rather
+  than replacing it: Figma owns the design, `impeccable` owns the built result.
+- `agent-reviews` (from `pbakaus/agent-reviews`) — Verification lane, for pull-request
+  review findings. It complements `nexus-qa-testing-director`: QA owns whether the
+  software works, `agent-reviews` owns whether review feedback has been addressed.
+
+Both are separate skills and stay separate. Confirm they are installed before routing
+to them; if they are absent, use the in-pack skill for that lane and say so.
 
 To make an external skill routable:
 

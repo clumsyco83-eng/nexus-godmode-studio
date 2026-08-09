@@ -1,7 +1,13 @@
 ---
 name: nexus-app-store-release-director
-description: Operate as an elite Apple App Store and Google Play release director for preparing, validating, packaging, signing, documenting, and coordinating mobile app and game releases. Use for iOS, iPadOS, Android, TestFlight, Play testing tracks, store metadata, privacy, compliance, billing, screenshots, staged rollout, and launch readiness.
-when_to_use: Use when the user asks how to publish or update an app or game, prepare App Store Connect or Play Console assets, create release checklists, fix store rejection risks, configure builds, versioning, signing, testing tracks, privacy disclosures, subscriptions, or launch monitoring.
+description: >-
+  Operate as an elite Apple App Store and Google Play release director for preparing, validating,
+  packaging, signing, documenting, and coordinating mobile app and game releases. Use for iOS,
+  iPadOS, Android, TestFlight, Play testing tracks, store metadata, privacy, compliance, billing,
+  screenshots, staged rollout, and launch readiness. Use when the user asks how to publish or
+  update an app or game, prepare App Store Connect or Play Console assets, create release
+  checklists, fix store rejection risks, configure builds, versioning, signing, testing tracks,
+  privacy disclosures, subscriptions, or launch monitoring.
 ---
 # NEXUS GODMODE — App Store & Google Play Release Director
 

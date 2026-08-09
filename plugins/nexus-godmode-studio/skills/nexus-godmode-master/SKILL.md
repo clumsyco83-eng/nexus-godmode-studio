@@ -389,47 +389,58 @@ all of its rules here.
 Route by lane, not by browsing the whole roster. Each lane names the skills that
 own that kind of work.
 
+Every entry carries the exact skill slug in backticks. Invoke by slug — the display
+name is for reading, the slug is what resolves.
+
 **Research** — current external facts before commitment
-- **Technology Research Scout** — libraries, vendors, platforms, pricing, deprecations.
+- `technology-research-scout` — libraries, vendors, platforms, pricing, deprecations.
 
 **Planning & structure** — shape before code
-- **Principal Architecture** — system structure, one-way-door decisions, evolution.
-- **AI Product Strategy** (`nexus-ai-product-strategy`) — idea validation, MVP scope, metrics, roadmap.
+- `principal-architecture` — system structure, one-way-door decisions, evolution.
+- `nexus-ai-product-strategy` — idea validation, MVP scope, metrics, roadmap.
 
 **Coding & delivery**
-- **Godmode v2** — execution orchestration and completion.
-- **Engineering Intelligence** — repository understanding, debugging, Git archaeology.
-- **Backend & Data Engineer** — APIs, databases, migrations, queues, data integrity.
-- **AI Systems Engineer** — AI, agents, RAG, tools, evals, model routing.
-- **Platform / SRE Engineer** — production reliability, CI/CD, observability, incidents.
+- `godmode-v2` — execution orchestration and completion.
+- `engineering-intelligence` — repository understanding, debugging, Git archaeology.
+- `backend-data-engineer` — APIs, databases, migrations, queues, data integrity.
+- `ai-systems-engineer` — AI, agents, RAG, tools, evals, model routing.
+- `platform-sre-engineer` — production reliability, CI/CD, observability, incidents.
 
 **UI / UX & design**
-- **Figma Design Director** (`nexus-figma-design-director`) — design systems, screens, prototypes, handoff.
+- `nexus-figma-design-director` — design systems, screens, states, prototypes, handoff.
+- `impeccable` *(external plugin — only if installed)* — design-fluency review of
+  implemented frontend: craft floor, anti-pattern detection, polish passes.
 
 **Application development**
-- **AAA Mobile App Studio** (`nexus-aaa-mobile-app-studio`) — iOS/Android product work end to end.
+- `nexus-aaa-mobile-app-studio` — iOS/Android product work end to end.
 
 **Game development**
-- **AAA Game Studio** (`nexus-aaa-game-studio`) — gameplay, systems, content, game release.
-- **Animation & VFX Studio** (`nexus-animation-vfx-studio`) — motion, particles, shaders, game feel.
+- `nexus-aaa-game-studio` — gameplay, systems, content, game release.
+- `nexus-animation-vfx-studio` — motion, particles, shaders, game feel.
 
 **Image / video / creative**
-- **Higgsfield Creative Director** (`nexus-higgsfield-creative-director`) — cinematic images and video, ads, storyboards, UGC.
-- **Animation & VFX Studio** — UI motion and interface animation.
+- `nexus-higgsfield-creative-director` — cinematic images and video, ads, storyboards, UGC.
+- `nexus-animation-vfx-studio` — UI motion and interface animation.
 
 **Testing & verification**
-- **QA & Testing Director** (`nexus-qa-testing-director`) — test strategy, coverage, defect triage, release gates.
+- `nexus-qa-testing-director` — test strategy, coverage, defect triage, release gates.
+- `resolve-reviews` / `resolve-agent-reviews` / `resolve-human-reviews`
+  *(external plugin `agent-reviews` — only if installed)* — triage and resolve pull-request
+  review findings from humans and review bots.
 
 **Security**
-- **Security Guardian** — threat modeling, secure design and code review, hardening.
+- `security-guardian` — threat modeling, secure design and code review, hardening.
 
 **Release & growth**
-- **App Store & Play Release Director** (`nexus-app-store-release-director`) — builds, signing, store compliance, rollout.
-- **ASO & Growth Marketing** (`nexus-aso-growth-marketing`) — positioning, store listing, launch, retention.
+- `nexus-app-store-release-director` — builds, signing, store compliance, rollout.
+- `nexus-aso-growth-marketing` — positioning, store listing, launch, retention.
 
 **Cross-cutting, always available**
-- **Token Optimizer v2** — context/tool/model efficiency.
-- **Project Memory / Continuity** — checkpoints, decisions, durable state.
+- `token-optimizer-v2` — context/tool/model efficiency.
+- `project-memory-continuity` — checkpoints, decisions, durable state.
+
+Entries marked *external plugin* live outside this pack. Route to them only after
+confirming they are installed; never assume presence from this list alone.
 
 For the full lane map, including how to add skills that live outside this pack,
 read `references/ORCHESTRATION_MAP.md`.

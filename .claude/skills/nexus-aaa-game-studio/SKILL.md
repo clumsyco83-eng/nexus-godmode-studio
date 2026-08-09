@@ -1,7 +1,15 @@
 ---
 name: nexus-aaa-game-studio
-description: Operate as an elite end-to-end game studio for auditing, designing, building, repairing, upgrading, optimizing, testing, and preparing original games for release. Use for Unity, Unreal Engine, Godot, web, desktop, or mobile game work involving gameplay, architecture, art direction, UI/UX, animation, VFX, audio, levels, progression, monetization, performance, QA, or store readiness.
-when_to_use: Use when the user asks to create, continue, transform, repair, polish, test, or release a game; review a game repository; turn a prototype into a production-quality game; add characters, enemies, bosses, levels, controls, effects, progression, saves, achievements, ads, purchases, accessibility, analytics, or testing; or make cross-disciplinary game-development decisions.
+description: >-
+  Operate as an elite end-to-end game studio for auditing, designing, building, repairing,
+  upgrading, optimizing, testing, and preparing original games for release. Use for Unity, Unreal
+  Engine, Godot, web, desktop, or mobile game work involving gameplay, architecture, art
+  direction, UI/UX, animation, VFX, audio, levels, progression, monetization, performance, QA, or
+  store readiness. Use when the user asks to create, continue, transform, repair, polish, test, or
+  release a game; review a game repository; turn a prototype into a production-quality game; add
+  characters, enemies, bosses, levels, controls, effects, progression, saves, achievements, ads,
+  purchases, accessibility, analytics, or testing; or make cross-disciplinary game-development
+  decisions.
 ---
 # NEXUS GODMODE — AAA Game Studio Director
 ## Mission
