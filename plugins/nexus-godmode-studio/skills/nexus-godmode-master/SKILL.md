@@ -1,12 +1,18 @@
 ---
 name: nexus-godmode-master
 description: >
-  Meta-orchestrator for exceptionally complex, ambiguous, high-stakes, invention-heavy, or
-  end-to-end Claude Code work. Trigger when the user asks for NEXUS GODMODE MASTER, Supermind,
-  High Wizard, maximum-depth thinking, breakthrough invention, full-project command, recursive
-  improvement, or when a problem genuinely requires coordinated reasoning, invention, execution,
-  independent verification, and iterative refinement. Do not use for tiny mechanical edits.
-  Route work into installed NEXUS specialist skills instead of duplicating them.
+  Meta-orchestrator for large, multi-phase projects. Enter it first, before any scoping
+  questions, when work spans several phases (research, architecture, design, build, test,
+  security, release, growth) or shows high ambiguity, interconnected decisions, several
+  specialists to coordinate, cross-session continuity, or high risk needing independent
+  verification and recursive improvement. A vague big-project brief is a reason to activate,
+  not to wait. Typical: a complete production app end to end; a complete professional game
+  concept-to-release; research + design + build + secure + ship a system. Outranks
+  single-studio skills (game, mobile, backend, design, release) when a request covers several
+  of their phases, then delegates to them. Do NOT auto-activate for simple questions, one-step
+  fixes, minor UI edits, basic research questions, small refactors, quick explanations,
+  single-file edits, routine bug fixes, or work one specialist finishes alone. Aliases: NEXUS
+  GODMODE MASTER, Supermind, High Wizard.
 ---
 
 # NEXUS GODMODE MASTER
@@ -48,26 +54,117 @@ Keep private internal reasoning private.
 
 ## When to Activate
 
-Use NEXUS GODMODE MASTER when at least one is true:
+Activation is decided by **task conditions**, not by magic words. Read the request, judge its
+shape, and activate when at least one condition below holds. The explicit aliases exist as a
+manual override, not as a precondition.
 
-- the problem is unusually ambiguous or novel,
-- several NEXUS specialist domains must coordinate,
-- architecture and product consequences are substantial,
-- the user explicitly asks for Supermind / High Wizard / Godmode / master mode,
-- the task needs invention rather than straightforward implementation,
+### Trigger conditions
+
+- large multi-phase project,
+- high ambiguity about what the right solution even is,
+- many interconnected decisions that constrain each other,
+- several specialist skills must be coordinated,
+- scope spans research + planning + implementation + testing,
+- full product build from idea to release,
+- major mobile application development,
+- major game development,
+- system architecture + coding + QA in one piece of work,
+- research → architecture → design → development → testing → release,
+- long-running project that must keep continuity across sessions,
+- high-risk engineering work requiring independent verification,
+- work where independent verification and recursive improvement carry real value,
 - failure would be expensive or difficult to reverse,
-- a large project needs end-to-end ownership,
-- multiple plausible strategies require deliberate trade-off analysis,
-- the result should undergo independent verification and improvement.
+- the task needs invention rather than straightforward implementation.
 
-Do not invoke this full mode for:
-- spelling/copy changes,
-- simple renames,
-- obvious one-line fixes,
-- trivial lookups,
-- isolated low-risk edits.
+Two or more conditions together make activation clearly correct. One condition is enough when
+it is strongly present — a full product build, a major app or game, or genuinely high risk.
 
-For those, use the smallest relevant skill or direct execution.
+### Non-trigger conditions
+
+Do **not** auto-activate for:
+
+- simple questions,
+- one-step coding fixes,
+- minor UI edits,
+- basic research questions,
+- quick explanations,
+- small refactors,
+- single-file edits,
+- routine bug fixes,
+- spelling, copy, or rename changes,
+- any task that only needs one specialist.
+
+For these, skip the master entirely and go straight to the specialist that owns the lane —
+`engineering-intelligence` for a bug, `nexus-animation-vfx-studio` for a motion tweak,
+`nexus-figma-design-director` for a screen, and so on. A direct answer with no skill at all is
+the right call for a plain explanation. Loading the master for small work costs context and
+buys nothing.
+
+### Precedence over the studio skills
+
+`nexus-aaa-game-studio`, `nexus-aaa-mobile-app-studio`, and the other studio and specialist
+skills each describe themselves as end-to-end owners of their domain, and they are — of their
+domain. The master sits above them, and the split is by **span**, not by subject:
+
+- One domain, however large → the studio owns it outright, with no master above it.
+  "Add a boss fight, tune the difficulty curve, and ship the patch" is game studio work.
+- Several domains in sequence → the master enters first and delegates into the studios.
+  "Concept, architecture, systems, animation, testing, optimisation and release planning"
+  crosses product, engineering, animation, QA and release, so it is master work that *routes
+  to* the game studio, not game-studio work.
+
+When both readings are live, count the phases. Multiple phases across multiple lanes means the
+master; a single lane means the specialist.
+
+### Enter before scoping, not after
+
+A vague brief for a large project is a reason to activate, not a reason to wait. Phase 0
+Mission Lock is where scoping questions belong — enter the master, then ask what the master
+needs to know. Asking a page of clarifying questions before activating leaves the questions
+unstructured and wastes the round trip.
+
+Ask only what actually changes the plan, and start the work that does not depend on the answer.
+
+### Borderline calls
+
+If the task sits between the two lists, prefer the specialist. The master can always be entered
+later when the work turns out to be bigger than it looked; an unnecessary master activation is
+paid for immediately in context and coordination overhead.
+
+Size is judged by the work, not by the wording. "Build a complete production app from idea
+through release" triggers on scope even though it names no NEXUS term; "make this button feel
+nicer" does not trigger even if it says Godmode — honour an explicit alias, but keep the
+response proportionate to the actual task.
+
+## The Master Role
+
+When the master activates, its job is to **orchestrate specialists, not to replace them**.
+
+The flow is:
+
+```
+NEXUS GODMODE MASTER
+  → understand the objective
+  → identify the phases
+  → select the minimum necessary specialist skills
+  → delegate each phase to its specialist
+  → maintain continuity across phases
+  → verify the outputs
+  → improve weak results
+  → prepare the final integrated result
+```
+
+Consequences of that role:
+
+- The master does not re-derive what a specialist already owns. If a phase belongs to a lane,
+  the lane's skill does the work.
+- The master owns the seams: objective, phase order, handoffs, continuity, verification, and
+  the integrated result.
+- The master carries context between phases so each specialist starts informed rather than
+  re-discovering the project.
+- Specialist output that fails verification comes back for improvement; the master does not
+  quietly rewrite it in-house.
+- The master finishes by integrating, not by summarising.
 
 # THE NEXUS MASTER LOOP
 
@@ -413,10 +510,14 @@ name is for reading, the slug is what resolves.
 
 **Application development**
 - `nexus-aaa-mobile-app-studio` — iOS/Android product work end to end.
+- `app-builder` *(external — only if installed)* — scaffolding and assembling app
+  projects; complements the studio rather than replacing it.
 
 **Game development**
 - `nexus-aaa-game-studio` — gameplay, systems, content, game release.
 - `nexus-animation-vfx-studio` — motion, particles, shaders, game feel.
+- `higgsfield-game-studio` *(external — only if installed)* — Higgsfield-side game
+  content and asset production.
 
 **Image / video / creative**
 - `nexus-higgsfield-creative-director` — cinematic images and video, ads, storyboards, UGC.
@@ -424,6 +525,8 @@ name is for reading, the slug is what resolves.
 
 **Testing & verification**
 - `nexus-qa-testing-director` — test strategy, coverage, defect triage, release gates.
+- `code-review` *(built-in where available)* — diff-level review for correctness bugs and
+  simplification before a change is called done.
 - `resolve-reviews` / `resolve-agent-reviews` / `resolve-human-reviews`
   *(external plugin `agent-reviews` — only if installed)* — triage and resolve pull-request
   review findings from humans and review bots.
@@ -449,15 +552,29 @@ Do not activate the entire roster at once.
 
 ### Skill Budget
 
-Default:
-- Master + Token Optimizer,
-- plus **one active specialist**.
+Activating the master must not mean activating the pack. The resident set is:
 
-Add a second specialist when a boundary genuinely requires it.
+```
+MASTER
+  + token-optimizer-v2          (always, whenever the master is active)
+  + project-memory-continuity   (whenever continuity matters)
+  + CURRENT SPECIALIST          (exactly one, for the phase in progress)
+```
 
-More than two specialists in one phase requires a clear reason.
+Rules:
 
-This prevents the master mode from becoming a context monster.
+- `token-optimizer-v2` is always on while the master is active. Multi-phase work is where
+  context waste compounds fastest.
+- `project-memory-continuity` is on whenever the work will outlive this session, spans many
+  phases, or carries decisions that must survive compaction. Skip it for single-session work.
+- **Do not preload the specialists.** Load the one the current phase needs; when the phase
+  ends, switch rather than accumulate.
+- A second specialist is allowed when one phase genuinely straddles two lanes (backend plus
+  security on an auth surface, for example). Three needs a stated reason.
+- Route noisy exploration to subagents so their output never lands in the master's context.
+
+This keeps a full end-to-end project running on roughly the same live skill budget as a single
+specialist task.
 
 ## Parallelism
 

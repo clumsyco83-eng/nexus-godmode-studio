@@ -5,13 +5,13 @@
     "url": "https://github.com/clumsyco83-eng"
   },
   "description": "NEXUS GODMODE STUDIO: twenty professional Claude Code skills for end-to-end product creation, engineering, and release.",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "plugins": [
     {
       "name": "nexus-godmode-studio",
       "source": "./plugins/nexus-godmode-studio",
       "description": "A multidisciplinary Claude Code production studio containing twenty specialist skills: nine studio directors plus eleven core engineering and orchestration skills.",
-      "version": "2.2.0",
+      "version": "2.3.0",
       "author": {
         "name": "Jhonny",
         "url": "https://github.com/clumsyco83-eng"

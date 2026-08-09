@@ -21,7 +21,9 @@ map is the routing layer between them.
 | UI / UX | `nexus-figma-design-director` | Design systems, screens and states, prototypes, developer handoff |
 | UI / UX — implemented craft | `impeccable` *(external)* | Design-fluency review of built frontend: craft floor, anti-pattern detection, polish |
 | App development | `nexus-aaa-mobile-app-studio` | iOS/Android product work end to end |
+| App development — scaffolding | `app-builder` *(external)* | Assembling and scaffolding app projects |
 | Game development | `nexus-aaa-game-studio` | Gameplay, systems, content, progression, game release |
+| Game development — Higgsfield | `higgsfield-game-studio` *(external)* | Higgsfield-side game content and asset production |
 | Animation / motion | `nexus-animation-vfx-studio` | Character and UI motion, camera, particles, shaders, game feel |
 | Image / video | `nexus-higgsfield-creative-director` | Cinematic images and video, ads, trailers, storyboards, UGC |
 | Testing | `nexus-qa-testing-director` | Test strategy, coverage, defect triage, performance, release gates |
@@ -29,12 +31,17 @@ map is the routing layer between them.
 | Release | `nexus-app-store-release-director` | Builds, signing, store compliance, metadata, testing tracks, rollout |
 | Growth | `nexus-aso-growth-marketing` | Positioning, ASO, creative testing, funnels, retention |
 | Verification | `nexus-qa-testing-director` + `security-guardian` | Independent evidence before completion |
+| Verification — diff review | `code-review` *(built-in where available)* | Correctness and simplification review of the change itself |
 | Verification — PR review | `resolve-reviews`, `resolve-agent-reviews`, `resolve-human-reviews` *(external, `agent-reviews`)* | Triage and resolve pull-request review findings from humans and review bots |
 | Continuity | `project-memory-continuity` | Checkpoints, decision records, durable state across sessions |
 | Efficiency | `token-optimizer-v2` | Narrow context loading, delta inspection, model/effort routing |
 
 ## Routing rules
 
+0. **The master is entered on task conditions, not on keywords.** Multi-phase scope,
+   high ambiguity, several lanes in play, end-to-end product or game work, or high risk
+   bring it in. A single-lane task goes straight to its specialist with no master above
+   it — that is the cheap path and it is the correct one.
 1. **Name the lane before naming the skill.** Identify what kind of work the phase
    is, then take the skill that owns that lane.
 2. **Respect the skill budget.** Master plus Token Optimizer plus one active
