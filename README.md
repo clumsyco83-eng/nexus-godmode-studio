@@ -144,6 +144,26 @@ keep `token-optimizer-v2` and `project-memory-continuity` on as cross-cutting su
 verify substantial work through QA and security before calling it done. A repository's own
 `CLAUDE.md` overrides it.
 
+## Installing skills from repos that have no plugin manifest
+
+Some good skill repositories ship `skills/` but no `.claude-plugin/` manifest, so
+`/plugin marketplace add` cannot install them. Copying the folders into `~/.claude/skills/`
+works but creates a second copy that drifts from upstream and never updates.
+
+[`global/install-external-skills.sh`](global/install-external-skills.sh) avoids that: it clones
+each upstream **once** into `~/src`, then symlinks the individual skill folders into
+`~/.claude/skills/`. One canonical source, updated with `git pull`, no duplicated files.
+Claude Code follows those symlinks — verified.
+
+```bash
+./global/install-external-skills.sh --list     # show what would be linked
+./global/install-external-skills.sh            # install or update
+./global/install-external-skills.sh --remove   # remove only its own symlinks
+```
+
+It refuses to replace anything that is not a symlink it created, so an existing real skill
+folder is never clobbered. Add more repositories by extending the `REPOS` array.
+
 ## Example commands
 
 ### Full-project orchestration
