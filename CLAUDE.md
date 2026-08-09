@@ -82,6 +82,28 @@ Consequences for any edit:
 Never merge skill folders and never delete one to resolve the duplication — the two copies are
 intentional and serve different install paths.
 
+### If you also install the plugin
+
+Installing `nexus-godmode-studio` while working inside this repository loads each skill twice:
+once namespaced from the plugin (`nexus-godmode-studio:<skill>`) and once bare from the mirror.
+Both are live, so the skill listing carries 40 entries for 20 skills and pays the pack's
+always-on listing cost twice.
+
+Fix it with per-skill visibility overrides, not by deleting anything:
+
+```jsonc
+// .claude/settings.local.json  — machine-local, git-ignored
+{ "skillOverrides": { "nexus-qa-testing-director": "off", "...": "off" } }
+```
+
+`skillOverrides` explicitly does **not** affect plugin skills, so setting all 20 bare names to
+`off` hides the mirror copies and leaves the plugin copies fully active — one canonical active
+copy of each skill.
+
+Keep this in `settings.local.json`, never in the committed `settings.json`. Someone who clones
+this repository *without* installing the plugin depends on the mirror being visible; committing
+the overrides would leave them with no NEXUS skills at all.
+
 ## SKILL.md requirements
 
 Every skill folder must contain a `SKILL.md` with:
