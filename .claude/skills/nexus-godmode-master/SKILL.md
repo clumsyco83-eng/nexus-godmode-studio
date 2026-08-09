@@ -386,18 +386,53 @@ all of its rules here.
 
 ## Specialist Router
 
-Use specialists on demand:
+Route by lane, not by browsing the whole roster. Each lane names the skills that
+own that kind of work.
 
-- **Godmode v2** — execution orchestration and completion.
+**Research** — current external facts before commitment
+- **Technology Research Scout** — libraries, vendors, platforms, pricing, deprecations.
+
+**Planning & structure** — shape before code
 - **Principal Architecture** — system structure, one-way-door decisions, evolution.
-- **Token Optimizer v2** — context/tool/model efficiency.
-- **Project Memory / Continuity** — checkpoints, decisions, durable state.
+- **AI Product Strategy** (`nexus-ai-product-strategy`) — idea validation, MVP scope, metrics, roadmap.
+
+**Coding & delivery**
+- **Godmode v2** — execution orchestration and completion.
 - **Engineering Intelligence** — repository understanding, debugging, Git archaeology.
-- **Security Guardian** — security-sensitive design/review.
 - **Backend & Data Engineer** — APIs, databases, migrations, queues, data integrity.
 - **AI Systems Engineer** — AI, agents, RAG, tools, evals, model routing.
-- **Technology Research Scout** — current technology/vendor/library research.
 - **Platform / SRE Engineer** — production reliability, CI/CD, observability, incidents.
+
+**UI / UX & design**
+- **Figma Design Director** (`nexus-figma-design-director`) — design systems, screens, prototypes, handoff.
+
+**Application development**
+- **AAA Mobile App Studio** (`nexus-aaa-mobile-app-studio`) — iOS/Android product work end to end.
+
+**Game development**
+- **AAA Game Studio** (`nexus-aaa-game-studio`) — gameplay, systems, content, game release.
+- **Animation & VFX Studio** (`nexus-animation-vfx-studio`) — motion, particles, shaders, game feel.
+
+**Image / video / creative**
+- **Higgsfield Creative Director** (`nexus-higgsfield-creative-director`) — cinematic images and video, ads, storyboards, UGC.
+- **Animation & VFX Studio** — UI motion and interface animation.
+
+**Testing & verification**
+- **QA & Testing Director** (`nexus-qa-testing-director`) — test strategy, coverage, defect triage, release gates.
+
+**Security**
+- **Security Guardian** — threat modeling, secure design and code review, hardening.
+
+**Release & growth**
+- **App Store & Play Release Director** (`nexus-app-store-release-director`) — builds, signing, store compliance, rollout.
+- **ASO & Growth Marketing** (`nexus-aso-growth-marketing`) — positioning, store listing, launch, retention.
+
+**Cross-cutting, always available**
+- **Token Optimizer v2** — context/tool/model efficiency.
+- **Project Memory / Continuity** — checkpoints, decisions, durable state.
+
+For the full lane map, including how to add skills that live outside this pack,
+read `references/ORCHESTRATION_MAP.md`.
 
 Do not activate the entire roster at once.
 
