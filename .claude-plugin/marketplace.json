@@ -4,14 +4,14 @@
     "name": "Jhonny",
     "url": "https://github.com/clumsyco83-eng"
   },
-  "description": "NEXUS GODMODE STUDIO: twenty-six professional Claude Code skills for end-to-end product creation, engineering, design, verification, and release.",
-  "version": "2.4.0",
+  "description": "NEXUS GODMODE STUDIO: twenty-seven professional Claude Code skills for end-to-end product creation, engineering, research, reasoning, design, verification, and release.",
+  "version": "2.5.0",
   "plugins": [
     {
       "name": "nexus-godmode-studio",
       "source": "./plugins/nexus-godmode-studio",
-      "description": "A multidisciplinary Claude Code production studio containing twenty-six complementary skills: nine studio directors, eleven NEXUS engineering/orchestration skills, and six vetted specialist additions.",
-      "version": "2.4.0",
+      "description": "A multidisciplinary Claude Code production studio containing twenty-seven complementary skills: nine studio directors, twelve NEXUS intelligence/engineering/orchestration skills, and six vetted specialist additions.",
+      "version": "2.5.0",
       "author": {
         "name": "Jhonny",
         "url": "https://github.com/clumsyco83-eng"
@@ -21,6 +21,9 @@
       "license": "MIT",
       "category": "development",
       "tags": [
+        "reasoning",
+        "research",
+        "decision-quality",
         "games",
         "mobile-apps",
         "figma",
