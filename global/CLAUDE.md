@@ -110,6 +110,27 @@ Typical compositions:
 - **Review a pull request** → `resolve-reviews` + security where the diff touches a sensitive surface
 - **Choose an architecture** → `technology-research-scout` → `principal-architecture`
 
+## Reports and deliverables
+
+**Whenever you produce a report, audit, review, plan, or similar written deliverable, deliver a
+PDF as well — without being asked.** Standing preference, not a per-request option.
+
+The pattern:
+
+1. Build the report as an artifact and publish it, so there is a live link.
+2. Convert the same source to PDF with
+   [`global/report-to-pdf.sh`](https://github.com/clumsyco83-eng/nexus-godmode-studio/blob/main/global/report-to-pdf.sh)
+   — one canonical source, two formats, no divergence.
+3. Send the PDF as a file, and give the artifact link alongside it.
+
+Verify the PDF before sending: page count, page size, and that the text is **extractable**, not
+an image scan. `report-to-pdf.sh` fails loudly if extraction yields almost no words. Render a
+page or two and actually look at them — layout defects (empty grid cells, clipped tables, split
+cards) are invisible in the source and obvious in the render.
+
+If a conversion or verification step fails, say so and hand over what does exist. Never describe
+a PDF as delivered without having verified it.
+
 ### Project instructions win
 
 A repository's own `CLAUDE.md` overrides this file. Project-specific skills — a repo's release

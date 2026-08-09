@@ -56,6 +56,13 @@ in-pack skill for that lane and say so rather than assuming it is present.
 Skills from other roots (`~/.claude/skills/`, installed plugins, built-ins such as `docx`,
 `pdf`, `pptx`, `xlsx`, `skill-creator`) are in scope for automatic selection on the same terms.
 
+## Reports and deliverables
+
+Whenever you produce a report, audit, review, or plan, **also deliver a PDF** — standing
+preference, not a per-request option. Publish the artifact for the live link, convert the same
+source with `global/report-to-pdf.sh`, verify the text is extractable (not an image scan), look
+at a rendered page or two, then send the file alongside the link.
+
 ## Skill layout in this repository
 
 This repository *is* a skill pack, and it keeps two live copies of every skill:
