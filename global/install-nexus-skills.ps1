@@ -197,8 +197,8 @@ $ReportLines = @(
     "- Status: **$Status**",
     "- Generated: $(Get-Date -Format o)",
     "- Scope: $Scope",
-    "- Skills directory: `$SkillsDir`",
-    "- Canonical source: `$CanonicalSkillsDir`",
+    "- Skills directory: ``$SkillsDir``",
+    "- Canonical source: ``$CanonicalSkillsDir``",
     "- Verified skills: $($Verified.Count) / $($SelectedSkills.Count)",
     "- Claude Code: $ClaudeStatus",
     '',
@@ -211,7 +211,7 @@ $ReportLines += "- Newly installed: $($Installed.Count)"
 $ReportLines += "- Updated: $($Updated.Count)"
 $ReportLines += "- Unrelated pre-existing skill folders preserved: $($RemovedUnrelated.Count -eq 0)"
 if (-not $VerifyOnly -and (Test-Path -LiteralPath $BackupRoot)) {
-    $ReportLines += "- Backup: `$BackupRoot`"
+    $ReportLines += "- Backup: ``$BackupRoot``"
 }
 $ReportLines += @('', '## Duplicate check', '')
 if ($DuplicateDetails.Count -eq 0) {
