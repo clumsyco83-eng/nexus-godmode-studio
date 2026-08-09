@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.5.0
+
+- Added `gary-intelligence-core`, an original cognitive-quality supervisor for difficult reasoning, research, technical decisions, adversarial review, confidence calibration, and engineering judgment.
+- Defined a ten-phase intelligence loop: decision lock, assumption ledger, option set, evidence plan, triangulation, adversarial pass, engineering reality check, decision comparison, confidence calibration, and independent verification.
+- Added explicit routing boundaries so Gary Intelligence Core improves judgment under uncertainty without duplicating `nexus-godmode-master`, `engineering-intelligence`, `principal-architecture`, `technology-research-scout`, QA, or security workflows.
+- Added research stopping rules, source hierarchy, claim-evidence discipline, recommendation falsifiers, and token/context controls.
+- Updated the global skill router so hard decisions can enter Gary Intelligence Core while routine execution remains on the narrowest specialist.
+- Expanded the pack from twenty-six to twenty-seven skills and bumped marketplace/plugin metadata together to `2.5.0`.
+
 ## 2.4.0
 
 - Expanded NEXUS GODMODE STUDIO from twenty to twenty-six complementary skills.
