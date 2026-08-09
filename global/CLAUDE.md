@@ -15,7 +15,7 @@ skill to use.** Naming a skill is an override, not a precondition. I should not 
 At the start of any non-trivial task:
 
 1. **Understand the task first.** Say what kind of work it is — research, design, backend,
-   game, release, review — before reaching for anything.
+   game, release, review, or difficult decision — before reaching for anything.
 2. **Look at what is actually installed.** Match the task against the available skills'
    descriptions. Route only to skills that are present; never assume a skill exists because
    it would be convenient, and never invent a skill name.
@@ -33,6 +33,16 @@ Loading every skill is a failure mode, not thoroughness — it burns context and
 - Load a skill when you reach the phase that needs it, not at the start "just in case".
 - Prefer the narrowest skill that covers the work over a broad orchestrator.
 
+### Cognitive-quality layer
+
+Use `gary-intelligence-core` when the main bottleneck is **judgment under uncertainty** rather
+than execution: the real question is unclear, several credible options compete, research must
+be triangulated, assumptions need stress-testing, or a consequential technical/product decision
+needs adversarial review and calibrated confidence.
+
+Do not use it merely because a task is large. If the decision is already settled and the work
+is execution, go straight to the owning specialist or orchestrator.
+
 ### Orchestration for multi-stage work
 
 When the work is a whole feature, product, migration, repository overhaul, or release —
@@ -45,6 +55,10 @@ route:
 
 The orchestrator picks specialists per phase. It does not do the specialists' work itself, and
 it does not hold every specialist open at once.
+
+When an orchestration phase reaches a difficult unresolved decision, it may call
+`gary-intelligence-core` for framing, evidence, adversarial review, confidence calibration and a
+decision-ready recommendation, then return execution to the relevant specialist.
 
 For a single well-defined task, skip the orchestrator and go straight to the specialist.
 
@@ -78,6 +92,7 @@ Route to whichever of these are installed. Slugs are what resolve.
 
 | Work | Skill |
 | --- | --- |
+| Difficult reasoning, multi-source research, consequential technical/product decision | `gary-intelligence-core` |
 | Large or ambiguous end-to-end outcome | `nexus-godmode-master`, `godmode-v2` |
 | Discover a missing specialist capability | `find-skills` |
 | Current libraries, vendors, pricing, deprecations | `technology-research-scout` |
@@ -110,6 +125,7 @@ Route to whichever of these are installed. Slugs are what resolve.
 
 Typical compositions:
 
+- **Hard technical decision** → Gary Intelligence Core → research scout / architecture / engineering specialist as needed → decision → implementation lane → QA → verification-before-completion
 - **New mobile product** → research → product strategy → architecture → Figma → `frontend-design`
   when implementing a web surface → mobile app studio → QA → security → release → growth
 - **New game** → product strategy → game studio → animation/VFX → QA → release
@@ -119,7 +135,7 @@ Typical compositions:
 - **Local web UI** → frontend-design when reshaping → webapp-testing → QA → verification-before-completion
 - **Improve a built UI** → Figma design director + `impeccable`
 - **Review a pull request** → `resolve-reviews` + security where the diff touches a sensitive surface
-- **Choose an architecture** → `technology-research-scout` → `principal-architecture`
+- **Choose an architecture with real uncertainty** → Gary Intelligence Core → `technology-research-scout` → `principal-architecture`
 - **Capability missing from the installed roster** → `find-skills` → verify source/quality → install only if it adds a non-duplicate lane
 
 ## Reports and deliverables
