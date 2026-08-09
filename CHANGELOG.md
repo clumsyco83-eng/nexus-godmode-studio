@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.4.0
+
+- Expanded NEXUS GODMODE STUDIO from twenty to twenty-six complementary skills.
+- Added `find-skills` from Vercel Labs for discovering reputable specialist skills when the current pack lacks a capability.
+- Added `verification-before-completion` from obra/superpowers to require fresh evidence before success or completion claims.
+- Added `git-guardrails-claude-code` from Matt Pocock, including its dangerous-Git blocking hook script.
+- Added `tdd` from Matt Pocock with its test and mocking references; locally adapted unresolved cross-skill references to installed NEXUS specialists.
+- Added Anthropic `webapp-testing` with its Playwright server helper, examples, and Apache-2.0 license.
+- Added Anthropic `frontend-design` with its Apache-2.0 license for stronger implemented visual design.
+- Deliberately did not duplicate `systematic-debugging`, `improve-codebase-architecture`, or `brainstorming`; existing NEXUS skills already own those workflows.
+- Added `THIRD_PARTY_SKILLS.md` with upstream repositories, revisions, modification status, and licensing details.
+- Bumped marketplace and plugin metadata together to `2.4.0`.
+
 ## 2.2.0
 
 - Specialist Router now lists every skill by its exact slug. Ten entries previously appeared
