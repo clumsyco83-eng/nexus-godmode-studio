@@ -120,6 +120,30 @@ invoke by name and fails `claude plugin validate`.
 You install the pack once. All twenty namespaced skills then become available as
 `/nexus-godmode-studio:<skill-name>`.
 
+## Global automatic skill selection
+
+`.claude/skills` and an installed plugin make the skills *available*. Making Claude **choose**
+them without being asked is a separate thing, and it lives in a memory file.
+
+This repository ships the canonical template at [`global/CLAUDE.md`](global/CLAUDE.md). Install
+it once per machine:
+
+```bash
+mkdir -p ~/.claude
+curl -fsSL https://raw.githubusercontent.com/clumsyco83-eng/nexus-godmode-studio/main/global/CLAUDE.md \
+  -o ~/.claude/CLAUDE.md
+```
+
+Already have a `~/.claude/CLAUDE.md`? Don't overwrite it — the template is wrapped in
+`NEXUS skill-selection block` comment markers, so paste the block in and keep your own
+instructions above or below it.
+
+It tells Claude to understand the task, match it against **installed** skills, pick the
+smallest sufficient set, route multi-stage work through `nexus-godmode-master` or `godmode-v2`,
+keep `token-optimizer-v2` and `project-memory-continuity` on as cross-cutting support, and
+verify substantial work through QA and security before calling it done. A repository's own
+`CLAUDE.md` overrides it.
+
 ## Example commands
 
 ### Full-project orchestration
