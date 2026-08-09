@@ -1,72 +1,131 @@
 # NEXUS GODMODE STUDIO
 
-One GitHub-hosted Claude Code plugin containing **nine professional specialist skills** in one organised folder.
+One GitHub-hosted Claude Code plugin containing **twenty professional specialist skills** in one organised folder.
+
+The pack has two layers:
+
+- **Nine studio directors** (`nexus-*`) — discipline-level product creation, from game and app development through design, creative, QA, release and growth.
+- **Eleven core engineering skills** — orchestration, architecture, backend/data, platform/SRE, AI systems, security, research, continuity and context efficiency.
+
+Every skill lives in its own folder with its own `SKILL.md`. Nothing is merged.
 
 ## Included skills
 
-- `/nexus-godmode-studio:nexus-aaa-game-studio` — **AAA Game Studio Director**: Games, gameplay, art, systems, optimization, and release preparation.
-- `/nexus-godmode-studio:nexus-aaa-mobile-app-studio` — **AAA Mobile App Studio Director**: Production-grade iOS and Android product development.
-- `/nexus-godmode-studio:nexus-figma-design-director` — **Figma Design Director**: Design systems, complete product flows, prototypes, and handoff.
-- `/nexus-godmode-studio:nexus-higgsfield-creative-director` — **Higgsfield Creative Director**: Cinematic images, videos, ads, UGC, storyboards, and creative QA.
-- `/nexus-godmode-studio:nexus-animation-vfx-studio` — **Animation & VFX Studio Director**: Character, UI, camera, particles, shaders, game feel, and performance.
-- `/nexus-godmode-studio:nexus-qa-testing-director` — **QA & Testing Director**: Risk-based testing, automation, defects, performance, and release gates.
-- `/nexus-godmode-studio:nexus-app-store-release-director` — **App Store & Google Play Release Director**: Builds, store compliance, metadata, testing tracks, rollout, and launch.
-- `/nexus-godmode-studio:nexus-aso-growth-marketing` — **ASO & Growth Marketing Director**: Positioning, store optimization, creative testing, funnels, and growth.
-- `/nexus-godmode-studio:nexus-ai-product-strategy` — **AI Product Strategy Director**: Validation, differentiation, AI suitability, MVP, metrics, and roadmap.
+### Studio directors
+
+- `nexus-aaa-game-studio` — Elite end-to-end game studio for auditing, designing, building, repairing, upgrading, optimizing, testing, and preparing original games for release.
+- `nexus-aaa-mobile-app-studio` — Elite end-to-end mobile application studio for production-grade iOS and Android apps.
+- `nexus-figma-design-director` — Figma product-design director for design systems, complete product flows, prototypes, and developer handoff.
+- `nexus-higgsfield-creative-director` — Higgsfield creative director for storyboards, cinematic images and video, motion ads, UGC, and campaign-ready delivery.
+- `nexus-animation-vfx-studio` — Animation, motion-design, technical-animation, and VFX studio for characters, UI, camera, particles, shaders, and game feel.
+- `nexus-qa-testing-director` — Quality-engineering and testing director for risk-based strategy, automation, defects, performance, and release gates.
+- `nexus-app-store-release-director` — Apple App Store and Google Play release director for builds, signing, store compliance, metadata, testing tracks, and rollout.
+- `nexus-aso-growth-marketing` — App Store Optimization, growth, launch, and product-marketing studio.
+- `nexus-ai-product-strategy` — AI product strategy, product management, business design, research, safety, and execution director.
+
+### Core engineering and orchestration
+
+- `nexus-godmode-master` — Meta-orchestrator for exceptionally complex, ambiguous, high-stakes, or invention-heavy work. Routes into the specialist skills rather than duplicating them.
+- `godmode-v2` — Top-level delivery and orchestration skill: mission definition through planning, delegation, execution, verification, recovery, and handoff.
+- `principal-architecture` — Principal-level software and systems architecture, sized to the current stage while preserving paths for growth.
+- `engineering-intelligence` — Rapidly understand unfamiliar repositories, trace behaviour, perform root-cause debugging, and isolate regressions.
+- `backend-data-engineer` — Production backend and data systems: APIs, databases, transactions, queues, caching, migrations, multi-tenancy, observability.
+- `platform-sre-engineer` — Deploy, operate, observe, scale, and recover production services and infrastructure.
+- `ai-systems-engineer` — Build, evaluate, harden, and operate production AI features and agentic systems.
+- `security-guardian` — Defensive secure-design review, threat modeling, dependency assessment, and security hardening.
+- `technology-research-scout` — Evidence-backed decision briefs on current libraries, frameworks, services, and platform rules.
+- `project-memory-continuity` — Preserve high-signal project knowledge across sessions, compaction, handoffs, and multiple agents.
+- `token-optimizer-v2` — Minimize token usage, context bloat, and noisy tool output without reducing correctness.
 
 ## Repository structure
 
 ```text
 nexus-godmode-studio/
 ├── .claude-plugin/
-│   └── marketplace.json
+│   └── marketplace.json          # marketplace entry pointing at plugins/nexus-godmode-studio
+├── .claude/
+│   └── skills/                   # generated mirror — auto-loads when working in THIS repo
+│       ├── README.md
+│       └── <20 skill folders>/SKILL.md
 ├── plugins/
 │   └── nexus-godmode-studio/
 │       ├── .claude-plugin/
 │       │   └── plugin.json
-│       └── skills/
-            ├── nexus-aaa-game-studio/SKILL.md
-            ├── nexus-aaa-mobile-app-studio/SKILL.md
-            ├── nexus-figma-design-director/SKILL.md
-            ├── nexus-higgsfield-creative-director/SKILL.md
-            ├── nexus-animation-vfx-studio/SKILL.md
-            ├── nexus-qa-testing-director/SKILL.md
-            ├── nexus-app-store-release-director/SKILL.md
-            ├── nexus-aso-growth-marketing/SKILL.md
-            └── nexus-ai-product-strategy/SKILL.md
+│       └── skills/               # SOURCE OF TRUTH — 20 skill folders
+│           ├── README.md
+│           ├── ai-systems-engineer/SKILL.md
+│           ├── backend-data-engineer/SKILL.md
+│           ├── engineering-intelligence/SKILL.md
+│           ├── godmode-v2/SKILL.md
+│           ├── nexus-aaa-game-studio/SKILL.md
+│           ├── nexus-aaa-mobile-app-studio/SKILL.md
+│           ├── nexus-ai-product-strategy/SKILL.md
+│           ├── nexus-animation-vfx-studio/SKILL.md
+│           ├── nexus-app-store-release-director/SKILL.md
+│           ├── nexus-aso-growth-marketing/SKILL.md
+│           ├── nexus-figma-design-director/SKILL.md
+│           ├── nexus-godmode-master/SKILL.md
+│           ├── nexus-higgsfield-creative-director/SKILL.md
+│           ├── nexus-qa-testing-director/SKILL.md
+│           ├── platform-sre-engineer/SKILL.md
+│           ├── principal-architecture/SKILL.md
+│           ├── project-memory-continuity/SKILL.md
+│           ├── security-guardian/SKILL.md
+│           ├── technology-research-scout/SKILL.md
+│           └── token-optimizer-v2/SKILL.md
+├── .github/workflows/
+│   └── sync-nexus-project-skills.yml
 ├── CHANGELOG.md
+├── CLAUDE.md
 ├── LICENSE
 └── README.md
 ```
 
-## Before uploading to GitHub
+### Two copies, on purpose
 
-Replace these placeholders in `.claude-plugin/marketplace.json` and `plugins/nexus-godmode-studio/.claude-plugin/plugin.json`:
+`plugins/nexus-godmode-studio/skills/` is the **source of truth**. `.claude/skills/` is a
+byte-identical **mirror** produced by the `Sync NEXUS Project Skills` workflow.
 
-- `YOUR_NAME`
-- `YOUR_GITHUB_USERNAME`
+- The plugin copy is what people install from the marketplace.
+- The mirror is what makes the skills load automatically for anyone who clones and works
+  inside this repository, with no plugin installation.
 
-Create one GitHub repository named:
+Because both copies are live, **edit the plugin copy and re-run the sync workflow** (or apply
+the same edit to both). A divergence between them is a bug, not a variant.
 
-```text
-nexus-godmode-studio
-```
+## How skills get used
 
-Upload the **contents of this folder** so `README.md`, `.claude-plugin`, and `plugins` appear at the repository root.
+There is no separate registration step. Claude Code discovers a skill when it finds
+`<skills-root>/<skill-name>/SKILL.md` with valid YAML frontmatter, and selects it based on the
+`description` and `when_to_use` fields. The recognised skill roots are:
+
+| Root | Scope |
+| --- | --- |
+| `~/.claude/skills/` | all of your projects |
+| `<repo>/.claude/skills/` | that repository only |
+| an installed plugin's `skills/` | wherever the plugin is enabled |
+
+Keep the folder name and the frontmatter `name` identical — a mismatch makes the skill hard to
+invoke by name and fails `claude plugin validate`.
 
 ## Install from GitHub
 
-Replace `YOUR_GITHUB_USERNAME` with the repository owner:
-
 ```text
-/plugin marketplace add YOUR_GITHUB_USERNAME/nexus-godmode-studio
+/plugin marketplace add clumsyco83-eng/nexus-godmode-studio
 /plugin install nexus-godmode-studio@nexus-studio-marketplace
 /reload-plugins
 ```
 
-You install the pack once. All nine namespaced skills then become available.
+You install the pack once. All twenty namespaced skills then become available as
+`/nexus-godmode-studio:<skill-name>`.
 
 ## Example commands
+
+### Full-project orchestration
+
+```text
+/nexus-godmode-studio:nexus-godmode-master Take this repository from prototype to a verified, releasable product.
+```
 
 ### Game project
 
@@ -78,6 +137,12 @@ You install the pack once. All nine namespaced skills then become available.
 
 ```text
 /nexus-godmode-studio:nexus-aaa-mobile-app-studio Inspect this app, complete the core user journey, fix defects, and prepare a production-ready iOS and Android build.
+```
+
+### Architecture
+
+```text
+/nexus-godmode-studio:principal-architecture Review the current structure and propose the simplest architecture that still supports the next two stages of growth.
 ```
 
 ### Figma design
@@ -102,6 +167,12 @@ You install the pack once. All nine namespaced skills then become available.
 
 ```text
 /nexus-godmode-studio:nexus-qa-testing-director Build a risk-based test strategy, reproduce current defects, add regression coverage, and give a go or no-go verdict.
+```
+
+### Security review
+
+```text
+/nexus-godmode-studio:security-guardian Threat-model this feature and review authentication, authorization, secrets handling, and dependencies before release.
 ```
 
 ### Store release
@@ -147,8 +218,12 @@ After pushing a new version to GitHub:
 /reload-plugins
 ```
 
-The version is currently `2.0.0`. Increase the version in both JSON files when publishing a new release.
+The version is currently `2.1.0`. Increase the version in **both**
+`.claude-plugin/marketplace.json` and `plugins/nexus-godmode-studio/.claude-plugin/plugin.json`
+when publishing a new release, and keep the two values equal.
 
 ## Important safety boundary
 
-“GODMODE” means maximum professional rigor, initiative, and validation. The skills do not instruct Claude Code to bypass permissions, hide failures, expose secrets, publish without authorization, copy protected work, or claim unverified completion.
+"GODMODE" means maximum professional rigor, initiative, and validation. The skills do not
+instruct Claude Code to bypass permissions, hide failures, expose secrets, publish without
+authorization, copy protected work, or claim unverified completion.

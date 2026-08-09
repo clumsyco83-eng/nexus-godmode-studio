@@ -1,5 +1,5 @@
 ---
-name: godmode
+name: godmode-v2
 description: >
   Top-level delivery and orchestration skill for Claude Code. Use when Claude must own a substantial
   software, application, game, product, repository, migration, or multi-stage engineering outcome

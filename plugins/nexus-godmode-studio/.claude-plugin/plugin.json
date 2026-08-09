@@ -1,11 +1,24 @@
 {
   "name": "nexus-godmode-studio",
-  "version": "1.0.0",
-  "description": "A professional multidisciplinary Claude Code skill pack for games, mobile apps, design, animation, testing, release, marketing and product strategy.",
+  "version": "2.1.0",
+  "description": "A professional multidisciplinary Claude Code skill pack: twenty specialist skills covering orchestration, architecture, backend and data, platform/SRE, AI systems, security, research, context efficiency, games, mobile apps, design, animation and VFX, testing, release, marketing and product strategy.",
   "author": {
-    "name": "Jhonny"
+    "name": "Jhonny",
+    "url": "https://github.com/clumsyco83-eng"
   },
   "homepage": "https://github.com/clumsyco83-eng/nexus-godmode-studio",
   "repository": "https://github.com/clumsyco83-eng/nexus-godmode-studio",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "orchestration",
+    "architecture",
+    "games",
+    "mobile-apps",
+    "figma",
+    "qa",
+    "release",
+    "security",
+    "sre"
+  ]
 }

@@ -1,19 +1,24 @@
 {
   "name": "nexus-studio-marketplace",
   "owner": {
-    "name": "YOUR_NAME"
+    "name": "Jhonny",
+    "url": "https://github.com/clumsyco83-eng"
   },
-  "description": "NEXUS GODMODE STUDIO: nine professional Claude Code skills for end-to-end product creation and release.",
-  "version": "2.0.0",
+  "description": "NEXUS GODMODE STUDIO: twenty professional Claude Code skills for end-to-end product creation, engineering, and release.",
+  "version": "2.1.0",
   "plugins": [
     {
       "name": "nexus-godmode-studio",
       "source": "./plugins/nexus-godmode-studio",
-      "description": "A multidisciplinary Claude Code production studio containing nine specialist skills.",
-      "version": "2.0.0",
+      "description": "A multidisciplinary Claude Code production studio containing twenty specialist skills: nine studio directors plus eleven core engineering and orchestration skills.",
+      "version": "2.1.0",
       "author": {
-        "name": "YOUR_NAME"
+        "name": "Jhonny",
+        "url": "https://github.com/clumsyco83-eng"
       },
+      "homepage": "https://github.com/clumsyco83-eng/nexus-godmode-studio",
+      "repository": "https://github.com/clumsyco83-eng/nexus-godmode-studio",
+      "license": "MIT",
       "category": "development",
       "tags": [
         "games",
@@ -23,7 +28,13 @@
         "qa",
         "release",
         "aso",
-        "product-strategy"
+        "product-strategy",
+        "architecture",
+        "backend",
+        "security",
+        "sre",
+        "ai-engineering",
+        "orchestration"
       ]
     }
   ]

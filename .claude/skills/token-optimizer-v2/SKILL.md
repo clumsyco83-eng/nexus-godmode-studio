@@ -1,5 +1,5 @@
 ---
-name: token-optimizer
+name: token-optimizer-v2
 description: >
   Minimize Claude Code token usage, context bloat, repeated reads, noisy tool output, and
   unnecessary agent work without reducing correctness. Use for coding, debugging, repository
