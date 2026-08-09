@@ -55,13 +55,16 @@ For a single well-defined task, skip the orchestrator and go straight to the spe
 - `project-memory-continuity` — engage when work will continue past this session, when resuming
   earlier work, or when decisions need to survive compaction and handoff. Checkpoint at phase
   boundaries.
+- `verification-before-completion` — use immediately before any meaningful success/completion
+  claim so the claim is backed by fresh test/build/runtime evidence rather than confidence.
 
-These two support the others; they are not a substitute for a specialist.
+These support the others; they are not a substitute for a specialist.
 
 ### Verification is a separate step
 
 The skill that produced the work does not certify it. Before calling substantial work done:
 
+- `verification-before-completion` — fresh evidence is required before the completion claim itself.
 - `nexus-qa-testing-director` — does it actually work? Tests, coverage, regressions, release gates.
 - `security-guardian` — auth, payments, admin, public APIs, secrets, dependencies, cloud/CI changes.
 - `resolve-reviews` (from `agent-reviews`, if installed) — have review findings been addressed?
@@ -76,20 +79,26 @@ Route to whichever of these are installed. Slugs are what resolve.
 | Work | Skill |
 | --- | --- |
 | Large or ambiguous end-to-end outcome | `nexus-godmode-master`, `godmode-v2` |
+| Discover a missing specialist capability | `find-skills` |
 | Current libraries, vendors, pricing, deprecations | `technology-research-scout` |
 | Structure, boundaries, one-way-door decisions | `principal-architecture` |
 | Idea validation, MVP scope, roadmap, metrics | `nexus-ai-product-strategy` |
 | Unfamiliar code, hard bugs, regressions | `engineering-intelligence` |
+| Build/fix behavior test-first | `tdd` |
 | APIs, schemas, queries, migrations, queues | `backend-data-engineer` |
 | Deploys, infra, observability, incidents | `platform-sre-engineer` |
 | LLM/agent features, RAG, evals, guardrails | `ai-systems-engineer` |
 | Screens, design systems, prototypes, handoff | `nexus-figma-design-director` |
+| Build or reshape a distinctive implemented frontend | `frontend-design` |
 | Polish/review frontend that already exists | `impeccable` |
+| Local browser/UI testing, screenshots, console logs | `webapp-testing` |
 | iOS/Android app work | `nexus-aaa-mobile-app-studio` |
 | Game work of any kind | `nexus-aaa-game-studio` |
 | Animation, motion, VFX, game feel | `nexus-animation-vfx-studio` |
 | Cinematic images/video, ads, storyboards, UGC | `nexus-higgsfield-creative-director` |
 | Test strategy, coverage, release gates | `nexus-qa-testing-director` |
+| Evidence immediately before a completion claim | `verification-before-completion` |
+| Protect Claude Code from destructive Git commands | `git-guardrails-claude-code` |
 | Auth, payments, admin, public APIs, pre-release review | `security-guardian` |
 | Pull-request review findings | `resolve-reviews` |
 | Store submission, signing, metadata, rollout | `nexus-app-store-release-director` |
@@ -101,14 +110,17 @@ Route to whichever of these are installed. Slugs are what resolve.
 
 Typical compositions:
 
-- **New mobile product** → research → product strategy → architecture → Figma → mobile app
-  studio → QA → security → release → growth
+- **New mobile product** → research → product strategy → architecture → Figma → `frontend-design`
+  when implementing a web surface → mobile app studio → QA → security → release → growth
 - **New game** → product strategy → game studio → animation/VFX → QA → release
 - **Existing repo, unclear behaviour** → engineering intelligence → architecture if structural
-  → the implementation lane → QA
+  → the implementation lane → QA → verification-before-completion
+- **Test-first feature/fix** → engineering intelligence when needed → TDD → QA → verification-before-completion
+- **Local web UI** → frontend-design when reshaping → webapp-testing → QA → verification-before-completion
 - **Improve a built UI** → Figma design director + `impeccable`
 - **Review a pull request** → `resolve-reviews` + security where the diff touches a sensitive surface
 - **Choose an architecture** → `technology-research-scout` → `principal-architecture`
+- **Capability missing from the installed roster** → `find-skills` → verify source/quality → install only if it adds a non-duplicate lane
 
 ## Reports and deliverables
 
